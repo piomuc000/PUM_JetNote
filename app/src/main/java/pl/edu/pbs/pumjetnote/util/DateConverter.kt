@@ -1,6 +1,7 @@
 package pl.edu.pbs.pumjetnote.util
 
 import androidx.room.TypeConverter
+import java.util.Date
 
 class DateConverter {
     @TypeConverter

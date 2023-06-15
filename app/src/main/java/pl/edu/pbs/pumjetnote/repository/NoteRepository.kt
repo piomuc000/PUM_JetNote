@@ -1,6 +1,12 @@
 package pl.edu.pbs.pumjetnote.repository
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.conflate
+import kotlinx.coroutines.flow.flowOn
 import pl.edu.pbs.pumjetnote.data.NoteDatabaseDao
+import pl.edu.pbs.pumjetnote.model.Note
+import javax.inject.Inject
 
 class NoteRepository @Inject constructor(
     private val noteDatabaseDao: NoteDatabaseDao

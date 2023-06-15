@@ -1,7 +1,18 @@
 package pl.edu.pbs.pumjetnote.componets
 
+import androidx.compose.material.Button
+import androidx.compose.material.Text
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.TextField
+import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.ExperimentalComposeUiApi
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.text.input.ImeAction
 
 @ExperimentalComposeUiApi
 @Composable
@@ -22,7 +33,7 @@ fun NoteInputText(
         ),
         maxLines = maxLine,
         label = { Text(text = label)},
-        keyboardOptions = KeyboardOptions.Default.Copy(
+        keyboardOptions = KeyboardOptions.Default.copy(
             imeAction = ImeAction.Done
         ),
         keyboardActions = KeyboardActions(

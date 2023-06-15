@@ -1,6 +1,7 @@
 package pl.edu.pbs.pumjetnote.util
 
 import java.text.SimpleDateFormat
+import java.util.Date
 import java.util.Locale
 
 fun formatDate(time: Long): String {
