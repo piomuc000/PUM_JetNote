@@ -32,6 +32,9 @@ import pl.edu.pbs.pumjetnote.componets.NoteInputText
 import pl.edu.pbs.pumjetnote.data.NotesDataSource
 import pl.edu.pbs.pumjetnote.model.Note
 import pl.edu.pbs.pumjetnote.util.formatDate
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+
 
 @ExperimentalComposeUiApi
 @Composable
